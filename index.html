@@ -387,7 +387,7 @@
       </div>
     </section>
 
-    <!-- Футер -->
+    <!-- Footer -->
 
     <footer>
       <div class="container">
@@ -400,49 +400,139 @@
             <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
           </address>
         </div>
+        <div class="cta-wrapper">
+          <div class="social-wrapper">
+            <h3 class="footer-cta">присоединяйтесь</h3>
+            <ul class="footer-social list">
+              <li class="footer-social-items">
+                <a class="footer-social-links" href="">
+                  <svg class="footer-social-icon">
+                    <use href="./images/icons/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-items">
+                <a class="footer-social-links" href="">
+                  <svg class="footer-social-icon">
+                    <use href="./images/icons/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-items">
+                <a class="footer-social-links" href="">
+                  <svg class="footer-social-icon">
+                    <use href="./images/icons/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-items">
+                <a class="footer-social-links" href="">
+                  <svg class="footer-social-icon">
+                    <use href="./images/icons/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
 
-        <div class="social-wrapper">
-          <h3 class="foter-cta">присоединяйтесь</h3>
-          <ul class="footer-social list">
-            <li class="footer-social-items">
-              <a class="footer-social-links" href="">
-                <svg class="footer-social-icon">
-                  <use href="./images/icons/sprite.svg#icon-instagram"></use>
+          <div class="subscribe-wrapper">
+            <h3 class="footer-cta">Подпишитесь на рассылку</h3>
+
+            <form action="" class="subscribe-form">
+              <label for="mail"></label>
+              <input
+                type="email"
+                name="email"
+                id="mail"
+                class="footer-form-input"
+                placeholder="E-mail"
+              />
+              <button type="submit" class="btn">
+                Подписаться
+                <svg class="telegram-icon" width="24" height="24">
+                  <use href="./images/icons/sprite.svg#icon-telegram"></use>
                 </svg>
-              </a>
-            </li>
-            <li class="footer-social-items">
-              <a class="footer-social-links" href="">
-                <svg class="footer-social-icon">
-                  <use href="./images/icons/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-items">
-              <a class="footer-social-links" href="">
-                <svg class="footer-social-icon">
-                  <use href="./images/icons/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-items">
-              <a class="footer-social-links" href="">
-                <svg class="footer-social-icon">
-                  <use href="./images/icons/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
+
+    <!-- End Footer -->
+
+    <!-- Modal -->
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
-          <svg class="modal-x-icon" width="11" height="11">
+          <svg class="modal-x-icon">
             <use href="./images/icons/sprite.svg#icon-close-modal"></use>
           </svg>
         </button>
+        <div class="form-wrapper">
+          <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+          <form action="" class="modal-form" autocomplete="off">
+            <label for="name" class="modal-form-label">Имя</label>
+            <span class="input-wrapper">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="modal-form-input"
+              />
+              <svg class="form-input-icon" width="12" height="12">
+                <use href="./images/icons/sprite.svg#icon-name"></use>
+              </svg>
+            </span>
+            <label for="phone" class="modal-form-label">Телефон</label>
+            <span class="input-wrapper">
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                class="modal-form-input"
+              />
+              <svg class="form-input-icon" width="13" height="13">
+                <use href="./images/icons/sprite.svg#icon-phone"></use>
+              </svg>
+            </span>
+            <label for="mail" class="modal-form-label">Почта</label>
+            <span class="input-wrapper">
+              <input
+                type="email"
+                name="mail"
+                id="mail"
+                class="modal-form-input"
+              />
+              <svg class="form-input-icon" width="15" height="12">
+                <use href="./images/icons/sprite.svg#icon-mail"></use>
+              </svg>
+            </span>
+            <label for="comment" class="modal-form-label">Комментарий</label>
+            <textarea
+              name="comment"
+              id="comment"
+              placeholder="Введите текст"
+              class="modal-form-message"
+            ></textarea>
+            <input
+              type="checkbox"
+              name="policy"
+              value="agree"
+              id="policy"
+              class="policy-input visually-hidden"
+            />
+            <label for="policy" class="modal-form-label policy-label"
+              >Соглашаюсь с рассылкой и принимаю&nbsp;<a
+                href=""
+                class="user-agreement-link"
+                >Условия договора</a
+              ></label
+            >
+            <button type="submit" class="btn">Отправить</button>
+          </form>
+        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>
